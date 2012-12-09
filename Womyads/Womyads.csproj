@@ -118,6 +118,10 @@
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\WebApiConfig.cs" />
     <Content Include="Global.asax" />
+    <Content Include="Images\como funciona.png" />
+    <Content Include="Images\computador.png" />
+    <Content Include="Images\sombreada.png" />
+    <Content Include="Images\Womyads.png" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

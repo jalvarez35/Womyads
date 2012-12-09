@@ -1,18 +1,41 @@
 ﻿@model Womyads.Models.Registro
-
-@using (Html.BeginForm()){
-
-    @Html.LabelFor(model => model.Nombre)
-    @Html.EditorFor(model =>model.Nombre)
-    @Html.ValidationMessageFor(model => model.Nombre)
-
-    @Html.LabelFor(model => model.Email)
-    @Html.EditorFor(model =>model.Email)
-    @Html.ValidationMessageFor(model => model.Email)
-
-    @Html.LabelFor(model => model.Asunto)
-    @Html.EditorFor(model =>model.Asunto)
-    @Html.ValidationMessageFor(model => model.Asunto)
-
-    <input type="submit" value="Enviar" />
-}
+<div>
+    <div>
+        <img src="@Url.Content("~/Images/Womyads.png")"/>
+    </div>
+    <div>
+        <img src="@Url.Content("~/Images/sombreada.png")" />
+    </div>
+</div>
+<div>
+    <div>
+        <img src="@Url.Content("~/Images/computador.png")" />
+        <span>WOMYADS es una herramienta publicitaria basada en el voz a voz online que potencializa al máximo la inversión de los anunciantes, además de ofrecerle una amplia y segmentada red de influenciadores latinoamericanos.</span>
+    </div>
+</div>
+<div>
+    @using (Html.BeginForm())
+    {
+        <ul>
+            <li>
+                @Html.LabelFor(model => model.Nombre)
+                @Html.EditorFor(model => model.Nombre)
+                @Html.ValidationMessageFor(model => model.Nombre)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Email)
+                @Html.EditorFor(model => model.Email)
+                @Html.ValidationMessageFor(model => model.Email)
+            </li>
+            <li>
+                @Html.LabelFor(model => model.Asunto)
+                @Html.EditorFor(model => model.Asunto)
+                @Html.ValidationMessageFor(model => model.Asunto)
+            </li>
+        </ul>
+        <input type="submit" value="Enviar" />
+    }
+</div>
+<div>
+    <img src="@Url.Content("~/Images/como funciona.png")" />
+</div>
