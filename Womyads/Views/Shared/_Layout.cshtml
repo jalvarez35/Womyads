@@ -4,12 +4,18 @@
 </head>
 <body>
     <div>
-    <div>
-        <img src="@Url.Content("~/Images/Womyads.png")"/>
+        <div>
+            <img src="@Url.Content("~/Images/Womyads.png")"/>
+        </div>
+        <div>
+            <img src="@Url.Content("~/Images/sombreada.png")" />
+        </div>
     </div>
     <div>
-        <img src="@Url.Content("~/Images/sombreada.png")" />
+        <ul>
+            <li>@Html.ActionLink("Womyads","Create","Registro")</li>
+            <li>@Html.ActionLink("Contáctenos","Create","Contacto")</li>
+        </ul>
     </div>
-</div>
     @RenderBody()
 </body>
