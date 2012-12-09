@@ -46,8 +46,8 @@ namespace Womyads.Models
         public string Estado { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El Campo:E-mail, está vacio")]
-        [EmailAddress(ErrorMessage="La dirección ingresada no tiene un formáto válido")]
-        [StringLength(100)]
+        [EmailAddress(ErrorMessage="La dirección ingresada no tiene un formato válido")]
+        [MaxLength(100,ErrorMessage="El campo admite máximo 100 caracteres")]
         [Display(Name = "E-mail")]
         public string Email { get; set; }
 
