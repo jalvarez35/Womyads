@@ -3,28 +3,28 @@ using System.ComponentModel.DataAnnotations;
 
 namespace Womyads.Models
 {
-    public class Formulario
+    public class Contacto
     {
         [Required(AllowEmptyStrings=false,ErrorMessage="El Campo:Nombre, está vacio")]
-        [StringLength(100)]
+        [MaxLength(100,ErrorMessage="El campo admite máximo 100 caracteres")]
         [Display(Name = "Nombre(s)")]
         public string Nombre { get; set;}
         
         [Required(AllowEmptyStrings=false,ErrorMessage="El Campo:Apellido, está vacio")]
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         [Display(Name = "Apellido(s)")]
         public string Apellido { get; set;}
 
         [Display(Name="Dirección")]
-        [StringLength(50)]
+        [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion1{get; set;}
 
         [Display (Name="")]
-        [StringLength(50)]
+        [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion2{get; set;}
 
         [Display(Name = "")]
-        [StringLength(50)]
+        [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion3 { get; set;}
         
         [Required(AllowEmptyStrings=false,ErrorMessage="El Campo:Cargo, está vacio")]
@@ -32,17 +32,17 @@ namespace Womyads.Models
         public string Cargo{get; set;}
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El Campo:Ciudad, está vacio")]
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         [Display(Name = "Ciudad")]
         public string Ciudad { get; set;}
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El Campo:Teléfono, está vacio")]
-        [StringLength(100)]
+        [MaxLength(100,ErrorMessage=" El campo admite máximo 100 caracteres")]
         [Display(Name = "Teléfono")]
         public string Telefono { get; set;}
 
         [Display(Name = "Estado/Provincia")]
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         public string Estado { get; set; }
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El Campo:E-mail, está vacio")]
@@ -51,7 +51,7 @@ namespace Womyads.Models
         [Display(Name = "E-mail")]
         public string Email { get; set; }
 
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         [Display(Name = "Código Postal")]
         public string CodigoPostal { get; set; }
 
@@ -59,15 +59,15 @@ namespace Womyads.Models
         public string Pais { get; set; }
 
         [Display(Name = "¿Cómo prefiere que nos contactemos con usted?")]
-        public int TContacto { get; set;}
+        public int TipoContacto { get; set;}
 
         [Required(AllowEmptyStrings = false, ErrorMessage = "El Campo:Nombre de la Empresa, está vacio")]
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         [Display(Name = "Nombre de la Empresa")]
         public string Empresa { get; set; }
 
         [Url(ErrorMessage="La dirección ingresada no es válida")]
-        [StringLength(100)]
+        [MaxLength(100, ErrorMessage = "El campo admite máximo 100 caracteres")]
         [Display(Name = "Website/URL de la Empresa")]
         public string Website { get; set; }
 

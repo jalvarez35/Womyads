@@ -107,8 +107,8 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
-    <Compile Include="Models\Formulario.cs" />
-    <Compile Include="Models\Pagina.cs" />
+    <Compile Include="Models\Contacto.cs" />
+    <Compile Include="Models\Registro.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
