@@ -1,0 +1,18 @@
+﻿@model Womyads.Models.Registro
+
+@using (Html.BeginForm()){
+
+    @Html.LabelFor(model => model.Nombre)
+    @Html.EditorFor(model =>model.Nombre)
+    @Html.ValidationMessageFor(model => model.Nombre)
+
+    @Html.LabelFor(model => model.Email)
+    @Html.EditorFor(model =>model.Email)
+    @Html.ValidationMessageFor(model => model.Email)
+
+    @Html.LabelFor(model => model.Asunto)
+    @Html.EditorFor(model =>model.Asunto)
+    @Html.ValidationMessageFor(model => model.Asunto)
+
+    <input type="submit" value="Enviar" />
+}

@@ -75,7 +75,7 @@ namespace Womyads.Models
         public string Actividad { get; set; }
 
         [Display(Name = "Tipo de Empresa")]
-        public string Tipo { get; set; }
+        public string TipoEmpresa { get; set; }
 
         [Display(Name = "Industria")]
         public string Industria { get; set; }
@@ -87,7 +87,7 @@ namespace Womyads.Models
         public string Interes{get;set;}
 
         [Display(Name = "Objetivos Principales de la Compaña")]
-        public string Objetivos { get; set;}
+        public string Objetivo { get; set;}
 
         [Display(Name = "¿Desea recibir comunicaciones de Microsoft Adversing? Por favor sellecione todas las que aplica.")]
         public string Comunicacion { get; set; }
