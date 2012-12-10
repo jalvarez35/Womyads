@@ -106,6 +106,7 @@
   <ItemGroup>
     <Compile Include="Controllers\Contacto.cs" />
     <Compile Include="Controllers\Registro.cs" />
+    <Compile Include="Controllers\Tablero.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -122,6 +123,12 @@
     <Content Include="Images\computador.png" />
     <Content Include="Images\sombreada.png" />
     <Content Include="Images\Womyads.png" />
+    <Content Include="Scripts\jqplot.BezierCurveRenderer.min.js" />
+    <Content Include="Scripts\jqplot.canvasAxisLabelRenderer.min.js" />
+    <Content Include="Scripts\jqplot.canvasAxisTickRenderer.min.js" />
+    <Content Include="Scripts\jqplot.pyramidAxisRenderer.min.js" />
+    <Content Include="Scripts\jquery.jqplot.js" />
+    <Content Include="Styles\jquery.jqplot.min.css" />
     <Content Include="Styles\Reset.css" />
     <Content Include="Styles\Womyads.css" />
     <Content Include="Web.config" />
@@ -150,6 +157,9 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\Shared\_Layout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Views\Tablero\Show.cshtml" />
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
