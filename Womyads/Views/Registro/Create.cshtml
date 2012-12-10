@@ -3,32 +3,35 @@
 <div class="computador">
     <div>
         <img src="@Url.Content("~/Images/computador.png")" />
-        <span>WOMYADS es una herramienta publicitaria basada en el voz a voz online que potencializa al máximo la inversión de los anunciantes, además de ofrecerle una amplia y segmentada red de influenciadores latinoamericanos.</span>
+        <span class="parrafo">WOMYADS es una herramienta publicitaria basada en el voz a voz online que potencializa al máximo la inversión de los anunciantes, además de ofrecerle una amplia y segmentada red de influenciadores latinoamericanos.</span>
     </div>
 </div>
 <div class="formulario-registro">
+
+    <h3>﻿﻿¡Ingrese sus datos y regístrese!</h3>
     @using (Html.BeginForm())
     {
-        <ul>
-            <li>
-                @Html.LabelFor(model => model.Nombre)
-                @Html.EditorFor(model => model.Nombre)
-                @Html.ValidationMessageFor(model => model.Nombre)
-            </li>
-            <li>
-                @Html.LabelFor(model => model.Email)
-                @Html.EditorFor(model => model.Email)
-                @Html.ValidationMessageFor(model => model.Email)
-            </li>
-            <li>
-                @Html.LabelFor(model => model.Asunto)
-                @Html.EditorFor(model => model.Asunto)
-                @Html.ValidationMessageFor(model => model.Asunto)
-            </li>
-        </ul>
-        <input type="submit" value="Enviar" />
+        
+        <div class="placeholding-input">
+            @Html.LabelFor(model => model.Nombre)
+            @Html.EditorFor(model => model.Nombre)
+            @Html.ValidationMessageFor(model => model.Nombre)
+        </div>
+        <div class="placeholding-input">
+            @Html.LabelFor(model => model.Email)
+            @Html.EditorFor(model => model.Email)
+            @Html.ValidationMessageFor(model => model.Email)
+        </div>
+        <div class="placeholding-input">
+            @Html.LabelFor(model => model.Asunto)
+            @Html.EditorFor(model => model.Asunto)
+            @Html.ValidationMessageFor(model => model.Asunto)
+        </div>
+        <div class="placeholding-input">
+            <input type="submit" value="Enviar" />
+        </div>
     }
 </div>
-<div>
-    <img src="@Url.Content("~/Images/como funciona.png")" />
+<div class="como-funciona">
+    <img src="@Url.Content("~/Images/como-funciona.png")" />
 </div>

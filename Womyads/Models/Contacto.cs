@@ -15,15 +15,15 @@ namespace Womyads.Models
         [Display(Name = "Apellido(s)")]
         public string Apellido { get; set;}
 
-        [Display(Name="Dirección")]
+        [Display(Name="Dirección 1")]
         [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion1{get; set;}
 
-        [Display (Name="")]
+        [Display(Name = "Dirección 2")]
         [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion2{get; set;}
 
-        [Display(Name = "")]
+        [Display(Name = "Dirección 3")]
         [MaxLength(50, ErrorMessage = "El campo admite máximo 50 caracteres")]
         public string Direccion3 { get; set;}
         

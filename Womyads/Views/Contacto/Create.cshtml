@@ -5,118 +5,119 @@
 
 @using (Html.BeginForm())
 { 
-    <legend>Formulario de Solicitud de Información</legend>
-    <ul>
-        <li>
-            @Html.LabelFor(model => model.Nombre)
-            @Html.EditorFor(model => model.Nombre)
-            @Html.ValidationMessageFor(model => model.Nombre)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Apellido)
-            @Html.EditorFor(model => model.Apellido)
-            @Html.ValidationMessageFor(model => model.Apellido)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Direccion1)
-            @Html.EditorFor(model => model.Direccion1)
-            @Html.ValidationMessageFor(model => model.Direccion1)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Direccion2)
-            @Html.EditorFor(model => model.Direccion2)
-            @Html.ValidationMessageFor(model => model.Direccion2)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Direccion3)
-            @Html.EditorFor(model => model.Direccion3)
-            @Html.ValidationMessageFor(model => model.Direccion3)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Cargo)
-            @Html.EditorFor(model => model.Cargo)
-            @Html.ValidationMessageFor(model => model.Cargo)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Ciudad)
-            @Html.EditorFor(model => model.Ciudad)
-            @Html.ValidationMessageFor(model => model.Ciudad)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Telefono)
-            @Html.EditorFor(model => model.Telefono)
-            @Html.ValidationMessageFor(model => model.Telefono)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Estado)
-            @Html.EditorFor(model => model.Estado)
-            @Html.ValidationMessageFor(model => model.Estado)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Email)
-            @Html.EditorFor(model => model.Email)
-            @Html.ValidationMessageFor(model => model.Email)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.CodigoPostal)
-            @Html.EditorFor(model => model.CodigoPostal)
-            @Html.ValidationMessageFor(model => model.CodigoPostal)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Pais)
-            @Html.EditorFor(model => model.Pais)
-            @Html.ValidationMessageFor(model => model.Pais)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.TipoContacto)
-            @Html.EditorFor(model => model.TipoContacto)
-            @Html.ValidationMessageFor(model => model.TipoContacto)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Empresa)
-            @Html.EditorFor(model => model.Empresa)
-            @Html.ValidationMessageFor(model => model.Empresa)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Website)
-            @Html.EditorFor(model => model.Website)
-            @Html.ValidationMessageFor(model => model.Website)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Actividad)
-            @Html.EditorFor(model => model.Actividad)
-            @Html.ValidationMessageFor(model => model.Actividad)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.TipoEmpresa)
-            @Html.EditorFor(model => model.TipoEmpresa)
-            @Html.ValidationMessageFor(model => model.TipoEmpresa)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Industria)
-            @Html.EditorFor(model => model.Industria)
-            @Html.ValidationMessageFor(model => model.Industria)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Presupuesto)
-            @Html.EditorFor(model => model.Presupuesto)
-            @Html.ValidationMessageFor(model => model.Presupuesto)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Interes)
-            @Html.EditorFor(model => model.Interes)
-            @Html.ValidationMessageFor(model => model.Interes)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Objetivo)
-            @Html.EditorFor(model => model.Objetivo)
-            @Html.ValidationMessageFor(model => model.Objetivo)
-        </li>
-        <li>
-            @Html.LabelFor(model => model.Comunicacion)
-            @Html.EditorFor(model => model.Comunicacion)
-            @Html.ValidationMessageFor(model => model.Comunicacion)
-        </li>
-    </ul>
-    <input type="submit" value="Enviar" />
+    <h4>Formulario de Solicitud de Información</h4>
+    
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Nombre)
+        @Html.EditorFor(model => model.Nombre)
+        @Html.ValidationMessageFor(model => model.Nombre)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Apellido)
+        @Html.EditorFor(model => model.Apellido)
+        @Html.ValidationMessageFor(model => model.Apellido)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Direccion1)
+        @Html.EditorFor(model => model.Direccion1)
+        @Html.ValidationMessageFor(model => model.Direccion1)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Direccion2)
+        @Html.EditorFor(model => model.Direccion2)
+        @Html.ValidationMessageFor(model => model.Direccion2)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Direccion3)
+        @Html.EditorFor(model => model.Direccion3)
+        @Html.ValidationMessageFor(model => model.Direccion3)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Cargo)
+        @Html.EditorFor(model => model.Cargo)
+        @Html.ValidationMessageFor(model => model.Cargo)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Ciudad)
+        @Html.EditorFor(model => model.Ciudad)
+        @Html.ValidationMessageFor(model => model.Ciudad)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Telefono)
+        @Html.EditorFor(model => model.Telefono)
+        @Html.ValidationMessageFor(model => model.Telefono)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Estado)
+        @Html.EditorFor(model => model.Estado)
+        @Html.ValidationMessageFor(model => model.Estado)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Email)
+        @Html.EditorFor(model => model.Email)
+        @Html.ValidationMessageFor(model => model.Email)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.CodigoPostal)
+        @Html.EditorFor(model => model.CodigoPostal)
+        @Html.ValidationMessageFor(model => model.CodigoPostal)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Pais)
+        @Html.EditorFor(model => model.Pais)
+        @Html.ValidationMessageFor(model => model.Pais)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.TipoContacto)
+        @Html.EditorFor(model => model.TipoContacto)
+        @Html.ValidationMessageFor(model => model.TipoContacto)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Empresa)
+        @Html.EditorFor(model => model.Empresa)
+        @Html.ValidationMessageFor(model => model.Empresa)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Website)
+        @Html.EditorFor(model => model.Website)
+        @Html.ValidationMessageFor(model => model.Website)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Actividad)
+        @Html.EditorFor(model => model.Actividad)
+        @Html.ValidationMessageFor(model => model.Actividad)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.TipoEmpresa)
+        @Html.EditorFor(model => model.TipoEmpresa)
+        @Html.ValidationMessageFor(model => model.TipoEmpresa)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Industria)
+        @Html.EditorFor(model => model.Industria)
+        @Html.ValidationMessageFor(model => model.Industria)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Presupuesto)
+        @Html.EditorFor(model => model.Presupuesto)
+        @Html.ValidationMessageFor(model => model.Presupuesto)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Interes)
+        @Html.EditorFor(model => model.Interes)
+        @Html.ValidationMessageFor(model => model.Interes)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Objetivo)
+        @Html.EditorFor(model => model.Objetivo)
+        @Html.ValidationMessageFor(model => model.Objetivo)
+    </div>
+    <div class="placeholding-input">
+        @Html.LabelFor(model => model.Comunicacion)
+        @Html.EditorFor(model => model.Comunicacion)
+        @Html.ValidationMessageFor(model => model.Comunicacion)
+    </div>
+    <div class="placeholding-input">
+        <input type="submit" value="Enviar" />
+    </div>
 }

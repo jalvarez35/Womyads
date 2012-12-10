@@ -105,7 +105,9 @@ a:hover, a:focus, a:active {
     width: 100px;
     content: '';
 }
-
+.body {
+margin-top:20px;
+}
 .computador, .formulario-registro {
     min-width: 470px;
     max-width: 470px;
@@ -131,56 +133,94 @@ form {
     text-align: left;
 }
 
-    form li {
-        height: 30px;
-        padding: 5px;
-        margin-bottom: 5px;
-        position: relative;
-    }
-
-    form label {
-        color: #666;
-        margin-top: 10px;
+    form .placeholding-input {
+        display: block;
+        width: 276px;
+        margin: 6px auto;
     }
 
     form input {
-        width: 200px;
-        margin-bottom: 5px;
-        height: 18px;
-        outline: none!important;
-        padding: 2px;
-        font-size: inherit;
-        font-weight: inherit;
-        -webkit-appearance: textfield;
+        width: 266px;
+        height: 20px;
+        border: 1px solid #CCC;
+        -webkit-box-shadow: inset 0 1px 0 #EEE, white 0 1px 0;
+        box-shadow: inset 0 1px 0 #EEE, white 0 1px 0;
+        padding: 4px;
+        margin: 0;
+        outline: 0;
         background-color: white;
-        -webkit-rtl-ordering: logical;
-        -webkit-user-select: text;
-        cursor: auto;
-        font: -webkit-small-control;
-        margin-right: 0px;
-        position: absolute;
-        right: 0px;
+        -webkit-border-radius: 3px;
+        border-radius: 3px;
+        font-size: 13px;
+        line-height: 20px;
+    }
+
+    form label {
+        right: 1px;
+        bottom: 1px;
+        left: 2px;
+        height: 20px;
+        padding: 4px;
+        font-size: 13px;
+        line-height: 20px;
+        color: #999;
+        white-space: nowrap;
+        cursor: text;
+        -webkit-transition: opacity .1s,font-size .1s;
+        -webkit-user-select: none;
+        user-select: none;
+        display: block;
+        margin-bottom: 5px;
+        margin: 0;
     }
 
 input[type="submit"] {
-    background-image: url(/Images/buttonGradientCombo.png);
-    border: 1px solid #304764;
+    border: none;
+    background-image: none;
+    background-color: #222;
+    display: block;
+    max-width: 175px;
+    padding: 5px 10px;
     color: white;
-    cursor: pointer;
-    margin-right: 6px;
-    padding: 6px 8px;
     text-decoration: none;
-    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
-    margin-bottom: 5px;
-    -webkit-box-align: center;
-    text-align: center;
-    -webkit-appearance: push-button;
-    white-space: pre;
-    -webkit-rtl-ordering: logical;
-    -webkit-user-select: text;
-    letter-spacing: normal;
-    word-spacing: normal;
-    text-transform: none;
-    text-indent: 0px;
-    float: left;
+    font-size: 13px;
+    border-radius: 5px;
+    list-style: none;
+    list-style-position: outside!important;
+    height: 30px;
+}
+
+.field-validation-error {
+    color: red;
+    display: inline;
+}
+
+nav {
+    background: #333;
+    height:35px;
+    clear:both;
+}
+
+    nav li {
+        display: inline;
+        height:35px;
+    }
+
+    nav ul li a {
+        padding: 10px;
+        border-left: 1px solid black;
+        border-bottom: none;
+        font-weight: bold;
+        color: white !important;
+        font-size: 15px;
+        font-family: Helvetica, Arial, sans-serif;
+        text-decoration: none;
+        text-align: center;
+    }
+.parrafo {
+font-size:16px;
+}
+.como-funciona {
+margin-top:20px;
+display:block;
 }
