@@ -122,6 +122,8 @@
     <Content Include="Images\computador.png" />
     <Content Include="Images\sombreada.png" />
     <Content Include="Images\Womyads.png" />
+    <Content Include="Styles\Reset.css" />
+    <Content Include="Styles\Womyads.css" />
     <Content Include="Web.config" />
     <Content Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>

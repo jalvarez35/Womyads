@@ -1,21 +1,26 @@
 ﻿<!DOCTYPE html>
 <head>
     <title>Womyads</title>
+    <link href="@Url.Content("~/Styles/Reset.css")" rel="stylesheet" type="text/css" />
+    <link href="@Url.Content("~/Styles/Womyads.css")" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <div>
-        <div>
-            <img src="@Url.Content("~/Images/Womyads.png")"/>
+    <div class="container">
+        <div class="cabecera">
+            <div class="logo">
+                <img src="@Url.Content("~/Images/Womyads.png")"/>
+            </div>
+            <div class="separador">
+            </div>
         </div>
-        <div>
-            <img src="@Url.Content("~/Images/sombreada.png")" />
+        <nav>
+            <ul>
+                <li>@Html.ActionLink("Womyads", "Create", "Registro")</li>
+                <li>@Html.ActionLink("Contáctenos", "Create", "Contacto")</li>
+            </ul>
+        </nav>
+        <div class="body">
+            @RenderBody()
         </div>
     </div>
-    <div>
-        <ul>
-            <li>@Html.ActionLink("Womyads","Create","Registro")</li>
-            <li>@Html.ActionLink("Contáctenos","Create","Contacto")</li>
-        </ul>
-    </div>
-    @RenderBody()
 </body>

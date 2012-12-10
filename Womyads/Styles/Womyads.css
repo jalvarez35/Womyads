@@ -1,0 +1,186 @@
+﻿body {
+    background: #f6f5f5;
+    background-color: #fff;
+    background-image: none;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #333;
+}
+
+    body * {
+        font-family: Helvetica,Arial,sans-serif;
+    }
+
+strong, b {
+    font-weight: bold;
+}
+
+em, i {
+    font-style: italic;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #222;
+    font-size: 32px;
+    line-height: 1.2em;
+    margin: 0px 0 .5em 0;
+}
+
+h2 {
+    color: #222;
+    font-size: 26px;
+    line-height: 1.3em;
+    margin: 1.07em 0 .535em 0;
+}
+
+    h2:first-child {
+        margin-top: 0;
+    }
+
+h3 {
+    color: #333;
+    font-size: 21px;
+    line-height: 1.25em;
+    margin: .7em 0 .25em 0;
+}
+
+h4 {
+    color: #333;
+    font-size: 17px;
+    line-height: 1.4em;
+    margin: 1.14em 0 .57em 0;
+}
+
+h5 {
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6em;
+    margin: 1.14em 0 .47em 0;
+}
+
+h6 {
+    color: #333;
+    font-size: 15px;
+    line-height: 1.6em;
+    margin: .9em 0 .4em 0;
+}
+
+p {
+    color: #333;
+    line-height: 1.6em;
+    margin: 1.07em 0 .535em 0;
+    font-size: 13px;
+}
+
+a:focus, input {
+    outline: none!important;
+}
+
+a:link, a:visited {
+    color: #3095b4;
+}
+
+a:hover, a:focus, a:active {
+    color: #e98300;
+}
+
+.container, .cabecera, .body, nav {
+    min-width: 960px;
+    max-width: 960px;
+    width: 960px;
+}
+
+.separador {
+    display: block;
+    background-image: url(/Images/sombreado.png);
+    background-position: 100% -87px;
+    height: 29px;
+    right: 0px;
+    top: 0px;
+    width: 100px;
+    content: '';
+}
+
+.computador, .formulario-registro {
+    min-width: 470px;
+    max-width: 470px;
+    width: 470px;
+    display: inline;
+    float: left;
+}
+
+.formulario-registro {
+    margin-left: 20px;
+}
+
+form {
+    border: none;
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+    line-height: 1px;
+    padding: 5px;
+    margin: 0px;
+    font-size: 100%;
+    vertical-align: baseline;
+    display: block;
+    text-align: left;
+}
+
+    form li {
+        height: 30px;
+        padding: 5px;
+        margin-bottom: 5px;
+        position: relative;
+    }
+
+    form label {
+        color: #666;
+        margin-top: 10px;
+    }
+
+    form input {
+        width: 200px;
+        margin-bottom: 5px;
+        height: 18px;
+        outline: none!important;
+        padding: 2px;
+        font-size: inherit;
+        font-weight: inherit;
+        -webkit-appearance: textfield;
+        background-color: white;
+        -webkit-rtl-ordering: logical;
+        -webkit-user-select: text;
+        cursor: auto;
+        font: -webkit-small-control;
+        margin-right: 0px;
+        position: absolute;
+        right: 0px;
+    }
+
+input[type="submit"] {
+    background-image: url(/Images/buttonGradientCombo.png);
+    border: 1px solid #304764;
+    color: white;
+    cursor: pointer;
+    margin-right: 6px;
+    padding: 6px 8px;
+    text-decoration: none;
+    text-shadow: 2px 2px 2px rgba(0, 0, 0, 0.25);
+    margin-bottom: 5px;
+    -webkit-box-align: center;
+    text-align: center;
+    -webkit-appearance: push-button;
+    white-space: pre;
+    -webkit-rtl-ordering: logical;
+    -webkit-user-select: text;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    float: left;
+}
